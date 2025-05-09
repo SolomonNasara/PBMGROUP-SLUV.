@@ -226,11 +226,11 @@ p {
 /* Hero Section - Fixed Version */
 .hero {
     position: relative;
-    height: 100vh;
-    min-height: 700px;
+    height: 80vh;
+    min-height: 100px;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 50px;
     overflow: hidden;
     isolation: isolate;
 }
@@ -240,26 +240,13 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625');
+    height: 800%;
+    background-image: url('hero.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -2;
-    animation: zoomParallax 20s infinite alternate;
-}
-
-.hero-bg::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, 
-                rgba(10, 25, 47, 0.9) 0%, 
-                rgba(23, 42, 69, 0.85) 100%);
-    z-index: -1;
+    z-index: 0;
+    animation: zoomParallax 2s infinite alternate;
 }
 
 @keyframes zoomParallax {
@@ -276,11 +263,7 @@ p {
     z-index: 1;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin-bottom: 30px;
-    color: var(--gray);
+
 }
 
 /* CTA Button */
